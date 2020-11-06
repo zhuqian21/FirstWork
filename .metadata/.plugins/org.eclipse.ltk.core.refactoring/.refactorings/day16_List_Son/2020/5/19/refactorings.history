@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="将包“VectorDemo”重命名为“cn.itcast_02”&#x0D;&#x0A;－ 原始项目：“day16_List”&#x0D;&#x0A;－ 原始元素：“day16_List/src/VectorDemo”&#x0D;&#x0A;－ 重命名的元素：“day16_List/src/cn.itcast_02”&#x0D;&#x0A;－ 更新对已重构元素的引用&#x0D;&#x0A;－ 更新注释和字符串中出现的文本" description="重命名包“VectorDemo”" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;VectorDemo" name="cn.itcast_02" qualified="false" references="true" stamp="1588586924527" textual="false" version="1.0"/>
+</session>

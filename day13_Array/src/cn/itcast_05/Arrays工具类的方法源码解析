@@ -1,0 +1,56 @@
+public static String toString(int[] a)
+public static void sort(int[] a):底层是快速排序，知道就可以了。
+public static int binarySearch(int[] a,int key):二分查找
+
+开发原则：
+	只要是对象，就要判断该对象是否为空
+int[] a = {24,69,80,57,13};
+System.out.println("排序前："+Arrays.toString(a));//通过类名直接调方法
+
+	public static String toString(int[] a) {
+     	   if (a == null)
+            	return "null";//说明数组对象不存在
+       	 	int iMax = a.length - 1;//iMax = 4
+        	if (iMax == -1)
+            	return "[]";//说明数组存在，但是没有元素
+
+        	StringBuilder b = new StringBuilder();
+        	b.append('[');//"["
+        	for (int i = 0; ; i++) {//不写条件，说明永远都是true
+           		b.append(a[i]);//"[24"
+           	 	if (i == iMax)
+                	return b.append(']').toString();
+          	b.append(", ");//"[24,"
+      	  }
+   	 }
+   	 
+   	 
+   	 public static int binarySearch(int[] a,int key)
+   	 int[] a = {13, 24, 57, 69, 80};
+  
+   	 public static int binarySearch(int[] a, int key) {
+        return binarySearch0(a, 0, a.length, key);
+    }
+    
+    private static int binarySearch0(int[] a, int fromIndex, int toIndex,
+                                     int key) {
+        //fromIndex -- 0
+        //toIndex -- 5
+        //key -- 388
+       
+        int low = fromIndex; //low = 0
+        int high = toIndex - 1;//high = 4
+
+        while (low <= high) {
+            int mid = (low + high) >>> 1;//右移一位（除以2）：mid=2,mid=3,mid=4
+            int midVal = a[mid];//midVal=57,midVal=69,midVal=13
+
+            if (midVal < key)
+                low = mid + 1;//low=3,low=4,low=5
+            else if (midVal > key)
+                high = mid - 1;
+            else
+                return mid; // key found
+        }
+        return -(low + 1);  // key not found.
+    }

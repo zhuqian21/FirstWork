@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Student.java&apos; to &apos;day15_List/src/cn.itcast_03&apos;&#x0D;&#x0A;－ 原始项目：“day15_Collection”&#x0D;&#x0A;－ 目标元素：“day15_List/src/cn.itcast_03”&#x0D;&#x0A;－ 原始元素：“cn.itcast_04.Student.java”" description="复制编译单元" destination="=day15_List/src&lt;cn.itcast_03" element1="/src&lt;cn.itcast_04{Student.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1588508130123" units="1" version="1.0"/>
+</session>
